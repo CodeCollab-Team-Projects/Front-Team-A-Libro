@@ -47,11 +47,7 @@ La interfaz está diseñada para ser intuitiva y fácil de usar. Los usuarios pu
 
 ## 📝 Licencia
 
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
-
-## 📧 Contacto
-
-Para consultas o más información, puedes contactar a [tu_email@example.com](mailto:tu_email@example.com).
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [MIT](https://opensource.org/license/mit) para más detalles.
 
 ---
 
