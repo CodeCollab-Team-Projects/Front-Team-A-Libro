@@ -1,0 +1,178 @@
+.home__hero {
+  position: relative;
+  overflow: hidden;
+  height: 80vh;
+  max-height: 100vh;
+  min-height: 40vh;
+  transition: height 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.home__hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.8) blur(2px);
+  transition: filter 0.3s ease;
+}
+
+
+.content {
+  min-height: 100vh;
+}
+
+.home__logo-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.home__logo {
+  max-width: 80%;
+  height: auto;
+}
+
+.home__title {
+  position: absolute;
+  bottom: 10%;
+  margin: 20px 0;
+}
+
+.home__logo-container h1{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.home__description{
+  margin: 0 auto;
+  text-align: center;
+  display:flex;
+  gap: 20px;
+  flex-direction: column;
+  padding: 0 10%;
+}
+
+.home__description h3{
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.paralelogramo{
+  position: relative;
+  padding: 5px 10px;
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+}
+
+.paralelogramo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3498db;
+    transform: skew(-20deg);
+    z-index: -1;
+}
+
+.home__cta {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.home__cta-button {
+  margin: 0 auto;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 80%;
+}
+
+.home__carousel{
+  padding: 20px 0;
+}
+
+/* Media queries */
+@media (max-width: 320px) {
+  .home__hero {
+    height: 40vh;
+  }
+
+  .home__title {
+    font-size: 20px;
+  }
+
+  .home__description {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .home__title {
+    font-size: 28px;
+  }
+
+  .home__description {
+    font-size: 18px;
+  }
+
+  .home__cta-button {
+    padding: 12px 24px;
+  }
+
+  .home__hero {
+    height: 40vh;
+  }
+
+  .home__hero-image {
+    object-position: top;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home__title {
+    font-size: 32px;
+  }
+
+  .home__description {
+    font-size: 20px;
+  }
+
+  .home__logo {
+    max-width: 60%;
+  }
+
+  .home__cta {
+    margin-top: 30px;
+  }
+
+  .home__cta-button {
+    padding: 14px 28px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .home__hero {
+    height: 80vh;
+  }
+
+  .home__hero-content {
+    font-size: 24px;
+  }
+
+  .home__carousel {
+    margin: 40px 0;
+  }
+}
