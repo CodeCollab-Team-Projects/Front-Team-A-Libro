@@ -41,9 +41,6 @@
   position: absolute;
   bottom: 10%;
   margin: 20px 0;
-}
-
-.home__logo-container h1{
   font-size: 24px;
   font-weight: 700;
 }
@@ -92,7 +89,7 @@
   margin: 0 auto;
   background-color: #007bff;
   color: white;
-  padding: 10px 5px;
+  padding: 15px 5px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -121,8 +118,9 @@
 
 @media (min-width: 768px) {
   .home__title {
-    font-size: 28px;
+    font-size: 60px;
   }
+
 
   .home__description {
     font-size: 18px;
@@ -136,14 +134,15 @@
     height: 40vh;
   }
 
-  .home__hero-image {
-    object-position: top;
+  .home__cta-button {
+    width: 40%;
+    font-size: 24px;
   }
 }
 
 @media (min-width: 1024px) {
   .home__title {
-    font-size: 32px;
+    font-size: 50px;
   }
 
   .home__description {
@@ -155,11 +154,14 @@
   }
 
   .home__cta {
-    margin-top: 30px;
+    margin-top: 40px;
+    margin-bottom: 50px
+
   }
 
   .home__cta-button {
-    padding: 14px 28px;
+    width: 30%;
+    font-size: 24px;
   }
 }
 
@@ -168,7 +170,12 @@
     height: 80vh;
   }
 
-  .home__hero-content {
+  .home__description {
+    font-size: 24px;
+    width: 60%;
+  }
+
+  .home__description h3 {
     font-size: 24px;
   }
 
