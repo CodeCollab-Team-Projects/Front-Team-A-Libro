@@ -1,6 +1,10 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/autoplay';
 import Card from '../Card/Card';
+
+
 
 function Carousel() {
   return (
@@ -17,10 +21,15 @@ function Carousel() {
           spaceBetween: 40,
         },
         1440: {
-          slidesPerView: 4,
+          slidesPerView: 2,
           spaceBetween: 50,
         },
       }}
+      autoplay={{
+        delay: 2000,
+        disableOnInteraction: false,
+      }}
+      modules={[Autoplay]}
       onSlideChange={() => { }}
       onSwiper={() => { }}
     >

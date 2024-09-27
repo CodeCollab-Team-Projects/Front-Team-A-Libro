@@ -101,6 +101,32 @@
   padding: 20px 0;
 }
 
+
+.home__footer {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  padding: 20px 0;
+  position: relative;
+}
+
+.home__footer p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.home__footer a {
+  color: #ffd700; /* Color dorado para los enlaces */
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.home__footer a:hover {
+  text-decoration: underline;
+}
+
+
 /* Media queries */
 @media (max-width: 320px) {
   .home__hero {
@@ -180,6 +206,8 @@
   }
 
   .home__carousel {
-    margin: 40px 0;
+    margin: 40px auto;
+    width: 50%;
   }
+  
 }
