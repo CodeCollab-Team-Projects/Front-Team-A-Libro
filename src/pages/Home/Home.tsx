@@ -4,6 +4,7 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import './Home.css';
 import Carousel from '../../components/Carousel/Carousel';
+import Footer from '../../components/Footer/Footer';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -62,7 +63,7 @@ const Home: React.FC = () => {
       </div>
 
       <div className="home__carousel">
-        <Carousel></Carousel>
+        <Carousel />
       </div>
 
       <div className="home__cta">
@@ -70,6 +71,8 @@ const Home: React.FC = () => {
           ¡Empieza a descubrir ahora!
         </button>
       </div>
+
+      <Footer></Footer>
     </>
   );
 };

@@ -17,7 +17,6 @@
   transition: filter 0.3s ease;
 }
 
-
 .content {
   min-height: 100vh;
 }
@@ -45,22 +44,22 @@
   font-weight: 700;
 }
 
-.home__description{
+.home__description {
   margin: 0 auto;
   text-align: center;
-  display:flex;
+  display: flex;
   gap: 20px;
   flex-direction: column;
   padding: 0 10%;
 }
 
-.home__description h3{
+.home__description h3 {
   font-size: 18px;
   font-weight: 800;
   margin-bottom: 20px;
 }
 
-.paralelogramo{
+.paralelogramo {
   position: relative;
   padding: 5px 10px;
   display: inline-block;
@@ -68,16 +67,16 @@
   color: white;
 }
 
-.paralelogramo::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #3498db;
-    transform: skew(-20deg);
-    z-index: -1;
+.paralelogramo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #3498db;
+  transform: skew(-20deg);
+  z-index: -1;
 }
 
 .home__cta {
@@ -97,7 +96,7 @@
   width: 80%;
 }
 
-.home__carousel{
+.home__carousel {
   padding: 20px 0;
 }
 
@@ -120,7 +119,6 @@
   .home__title {
     font-size: 60px;
   }
-
 
   .home__description {
     font-size: 18px;
@@ -155,8 +153,7 @@
 
   .home__cta {
     margin-top: 40px;
-    margin-bottom: 50px
-
+    margin-bottom: 50px;
   }
 
   .home__cta-button {
@@ -180,6 +177,7 @@
   }
 
   .home__carousel {
-    margin: 40px 0;
+    margin: 40px auto;
+    width: 50%;
   }
 }
