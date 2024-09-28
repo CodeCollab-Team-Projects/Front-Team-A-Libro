@@ -1,7 +1,7 @@
 import React from 'react'
 import { Navigate } from 'react-router-dom'
 
-const isAuthenticated = false;
+const isAuthenticated = true;
 
 interface PublicRouteProps {
   element: React.ReactElement;
