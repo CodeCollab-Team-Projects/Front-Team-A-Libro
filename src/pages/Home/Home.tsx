@@ -4,6 +4,7 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import './Home.css';
 import Carousel from '../../components/Carousel/Carousel';
+import Footer from '../../components/Footer/Footer';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -62,7 +63,7 @@ const Home: React.FC = () => {
       </div>
 
       <div className="home__carousel">
-        <Carousel></Carousel>
+        <Carousel />
       </div>
 
       <div className="home__cta">
@@ -71,19 +72,7 @@ const Home: React.FC = () => {
         </button>
       </div>
 
-      <footer className="home__footer">
-        <p>BookCheck © 2024. Todos los derechos reservados.</p>
-        <div>
-          <a href="/about">Acerca de</a>
-          <a href="/privacy">Política de privacidad</a>
-          <a href="/terms">Términos y condiciones</a>
-        </div>
-        <p>Conectémonos:
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a> |
-          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a> |
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-        </p>
-      </footer>
+      <Footer></Footer>
     </>
   );
 };

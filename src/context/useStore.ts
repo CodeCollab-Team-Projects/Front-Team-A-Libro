@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 
 const useStore = create((set) => ({
-  isAuth: false,
+  isAuth: true,
   JWT: '',
   user: {},
   login: (JWT: string) => set({ JWT, isAuth: true }),
