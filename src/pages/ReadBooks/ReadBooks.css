@@ -1,0 +1,40 @@
+.books-container {
+  
+}
+
+.books-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.books-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+@media (max-width: 320px) {
+}
+
+@media (min-width: 768px) {
+  .books-list {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .books-list {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .books-list {
+    width: 50%;
+  }
+}
