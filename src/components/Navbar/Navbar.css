@@ -1,7 +1,10 @@
 .navbar {
   background-color: #3498db;
   padding: 10px 20px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .navbar-container {
@@ -41,7 +44,7 @@
 }
 
 .menu {
-  display: flex; /* Cambiar a flex para la animación */
+  display: flex;
   gap: 15px;
 }
 
@@ -55,7 +58,6 @@
   color: #ff6347;
 }
 
-/* Media Queries */
 @media (min-width: 769px) {
   .hamburger {
     display: none;
@@ -65,7 +67,7 @@
     display: flex;
   }
 
-  .logo__window{
+  .logo__window {
     display: none;
   }
 }
@@ -86,18 +88,18 @@
     padding: 10px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-top: 1px solid #444;
-    transform: translateX(-100%); /* Mover fuera de la vista */
-    opacity: 0; /* Inicialmente oculto */
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Transiciones suaves */
-    pointer-events: none; /* Evitar clics cuando está oculto */
-    display: flex; /* Asegúrate de que el menú se muestre como flex */
-    flex-direction: column; /* Agregar esto para mostrar los elementos en columna */
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
   }
 
   .menu.open {
-    transform: translateX(0); /* Mover a la vista */
-    opacity: 1; /* Hacer visible */
-    pointer-events: auto; /* Permitir clics cuando está visible */
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
   }
 
   .menu-item {
@@ -109,4 +111,8 @@
   .menu-item:last-child {
     border-bottom: none;
   }
+}
+
+body {
+  padding-top: 60px;
 }
